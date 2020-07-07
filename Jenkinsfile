@@ -3,7 +3,7 @@ node
 		stage('Build Docker Build')
 			{
 			    
-				sh 'VERSION=$(date+%H-%M-%S)'
+				sh 'VERSION=$(date +%H-%M-%S)'
 				sh 'docker build -t yellanurmadhu/lab:${VERSION}'		
 			}
 			
