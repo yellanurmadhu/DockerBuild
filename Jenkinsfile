@@ -4,7 +4,7 @@ node
 			{
 			    
 				sh 'VERSION=$(date +%H-%M-%S)'
-				sh 'docker build -t yellanurmadhu/lab:${VERSION}'		
+				sh 'docker build -t yellanurmadhu/lab:${VERSION} .'		
 			}
 			
 		stage('Push Image to Docker Hub')
